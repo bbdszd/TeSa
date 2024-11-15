@@ -12,7 +12,21 @@
 
 ### Requirements
 
-### Model Training
+- python >= 3.8
+
+- pandas==0.24.2
+
+- torch==1.1.0
+
+- tqdm==4.41.1
+
+- numpy==1.16.4
+
+- scikit_learn==0.22.1
+
+### Command
+
+python -u learn_edge.py -d aminer --bs 200 --uniform --n_degree 20 --agg_method attn --attn_mode prod --n_node_type 3 --n_node_type 3 --tra_len 6
 
 ### General Flags
 
@@ -20,7 +34,7 @@
 >
 >> -h, --help              show this help message and exit
 >>
->> -d DATA, --data DATA    data sources to use, try wikipedia or reddit
+>> -d DATA, --data DATA    data sources to use, try yelp or aminer
 >>
 >> --bs BS                 batch_size
 >>
